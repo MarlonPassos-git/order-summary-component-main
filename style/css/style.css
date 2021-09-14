@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 450px;
+  width: 90%;
+  max-height: 700px;
+  min-height: 560px;
+  height: auto;
+  padding: 0 48px;
+  margin: 10px 0;
+  border-radius: 20px;
+  background-color: #FFF;
+  z-index: 2;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .card {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 335px) {
+  .card {
+    width: 98%;
+  }
+}
+.card__image {
+  max-width: 450px;
+  max-height: 220px;
+  min-height: 160px;
+  object-fit: contain;
+  height: 45vw;
+}
+@media (max-height: 700px) {
+  .card__image {
+    object-fit: cover;
+  }
+}
+.card__title {
+  margin: 45px 0 17px;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #1f2f56;
+}
+.card__paragraph {
+  text-align: center;
+  max-width: 28ch;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #7280a7;
+  line-height: 1.67;
+  margin-bottom: 28px;
+}
+@media (max-width: 400px) {
+  .card__paragraph {
+    max-width: 25ch;
+  }
+}
+.card button:hover {
+  cursor: pointer;
+}
+.card .plan {
+  display: grid;
+  grid-template: "img title button" "img value button";
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #f5f7ff;
+  padding: 25px 24px;
+  border-radius: 11px;
+}
+@media (max-width: 400px) {
+  .card .plan {
+    height: 80px;
+    padding: 16px;
+  }
+}
+.card .plan__image {
+  grid-area: img;
+}
+.card .plan__title {
+  grid-area: title;
+  font-size: 1rem;
+}
+@media (max-width: 400px) {
+  .card .plan__title {
+    font-size: 0.875rem;
+  }
+}
+.card .plan__value {
+  grid-area: value;
+  font-size: 1rem;
+}
+@media (max-width: 400px) {
+  .card .plan__value {
+    font-size: 0.875rem;
+  }
+}
+.card .plan__value abbr {
+  text-decoration: none;
+}
+.card .plan__button {
+  grid-area: button;
+  justify-self: end;
+  border: none;
+  background-color: transparent;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  color: #3829e0;
+  font-weight: 700;
+  transition: 0.2s;
+  padding: 10px 0 10px 10px;
+}
+@media (max-width: 400px) {
+  .card .plan__button {
+    font-size: 0.8125rem;
+  }
+}
+.card .plan__button:hover {
+  transform: scale(1.02);
+}
+.card__button {
+  box-sizing: unset;
+  width: 100%;
+  height: 50px;
+  font-weight: 900;
+  border: none;
+  transition: 0.2s;
+  font-size: 0.9375rem;
+}
+.card__button--proceed {
+  background-color: #3829e0;
+  border-radius: 11px;
+  margin: 24px 0;
+  box-shadow: 0 20px 20px 0 rgba(56, 42, 225, 0.19);
+  color: #fff;
+}
+.card__button--proceed:hover {
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+.card__button--cancel {
+  margin: 0 0 50px 0;
+  height: auto;
+  background-color: transparent;
+  color: #7280a7;
+}
+.card__button--cancel:hover {
+  transform: scale(1.01);
+  color: #000;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  background-color: #e0e8ff;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+}
+@media (max-width: 370px) {
+  main {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100wh;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+// reset
+@import "reset";
+
+
+//variables 
+@import "base";
+
+
+//componets
+@import "card";
+
+// body
+
+main {
+
+    display: grid;
+    place-items: center;
+
+    height: 100vh;
+
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: $c--primary--pale_blue;
+
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+
+    margin: 0;
+
+    @media (max-width: 370px ) {
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
+}
+
+body {
+    height: 100vh;
+    width:  100wh;
+}

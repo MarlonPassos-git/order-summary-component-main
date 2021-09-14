@@ -1,0 +1,34 @@
+// Functions 
+
+@function rem($pixels, $contexto: 16) {
+	@return ($pixels / $contexto) * 1rem;
+}
+
+
+// Variables
+
+    // Color
+
+        $c--primary--pale_blue: hsl(225, 100%, 94%);
+        $c--primary--bright_blue: hsl(245, 75%, 52%);
+
+        $c--neutral--very_pale_blue: hsl(225, 100%, 98%);
+        $c--neutral--desaturated_blue: hsl(224, 23%, 55%);
+        $c--neutral--dark_blue: hsl(223, 47%, 23%);
+        $c--neutral--black: #1f2f56;
+
+    // Fonts 
+
+        $fs--xl: rem(30);
+        $fs--l: rem(28);
+        $fs--m: rem(16);
+        $fs--ms: rem(15);
+        $fs--s: rem(14);
+        $fs--xs: rem(13);
+
+
+
+
+
+
+
