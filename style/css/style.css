@@ -36,12 +36,15 @@ li {
     width: 98%;
   }
 }
+.card bottom {
+  font-family: "Red Hat Display", sans-serif;
+}
 .card__image {
   max-width: 450px;
   max-height: 220px;
   min-height: 160px;
-  object-fit: contain;
   height: 45vw;
+  object-fit: contain;
 }
 @media (max-height: 700px) {
   .card__image {
@@ -123,6 +126,7 @@ li {
   font-weight: 700;
   transition: 0.2s;
   padding: 10px 0 10px 10px;
+  font-family: "Red Hat Display", sans-serif;
 }
 @media (max-width: 400px) {
   .card .plan__button {
@@ -140,6 +144,7 @@ li {
   border: none;
   transition: 0.2s;
   font-size: 0.9375rem;
+  font-family: "Red Hat Display", sans-serif;
 }
 .card__button--proceed {
   background-color: #3829e0;
