@@ -18,9 +18,9 @@ main {
 
     height: 100vh;
 
-    background-image: url(/images/pattern-background-desktop.svg);
+    background: url(/images/pattern-background-desktop.svg), $c--primary--pale_blue;
     background-repeat: repeat-x;
-    background-color: $c--primary--pale_blue;
+    
 
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
@@ -28,7 +28,7 @@ main {
     margin: 0;
 
     @media (max-width: 370px ) {
-        background-image: url(/images/pattern-background-mobile.svg);
+        background: url(/images/pattern-background-mobile.svg), $c--primary--pale_blue;
     }
 }
 
