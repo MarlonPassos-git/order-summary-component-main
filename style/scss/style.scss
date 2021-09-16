@@ -14,22 +14,19 @@
 main {
 
     display: grid;
-    place-items: center;
-
-    height: 100vh;
-
-    background: url(/images/pattern-background-desktop.svg), $c--primary--pale_blue;
-    background-repeat: repeat-x;
-    
-
-    font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
-
-    margin: 0;
-
-    @media (max-width: 370px ) {
-        background: url(/images/pattern-background-mobile.svg), $c--primary--pale_blue;
-    }
+  place-items: center;
+  height: 100vh;
+  background: url(/order-summary-component-main-main/images/pattern-background-desktop.svg), #E0E8FF;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+}
+@media (max-width: 370px) {
+  main {
+    background-image: url(/order-summary-component-main-main/images/pattern-background-mobile.svg), #E0E8FF;
+  }
 }
 
 body {
