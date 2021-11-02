@@ -10,7 +10,7 @@
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [[Add solution URL here](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
 - Live Site URL: [https://marlonpassos-git.github.io/order-summary-component-main/](https://marlonpassos-git.github.io/order-summary-component-main/)
   
 
